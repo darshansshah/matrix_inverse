@@ -1,0 +1,49 @@
+`timescale 1ns / 1ps
+
+////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer:
+//
+// Create Date:   20:21:16 10/07/2016
+// Design Name:   metrix_inverse
+// Module Name:   C:/Users/DARSHAN/Desktop/matrix/matrix_inverse/matrix_inverse_tb.v
+// Project Name:  matrix_inverse
+// Target Device:  
+// Tool versions:  
+// Description: 
+//
+// Verilog Test Fixture created by ISE for module: metrix_inverse
+//
+// Dependencies:
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+module matrix_inverse_tb;
+
+	// Inputs
+	reg clk;
+
+	// Instantiate the Unit Under Test (UUT)
+	metrix_inverse uut (
+		.clk(clk)
+	);
+
+	always #50 clk = ~clk;
+	initial begin
+		// Initialize Inputs
+		clk = 0;
+
+		// Wait 100 ns for global reset to finish
+
+        
+		// Add stimulus here
+
+
+	end
+      
+endmodule
+
